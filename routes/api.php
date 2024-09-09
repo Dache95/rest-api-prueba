@@ -12,6 +12,7 @@ Route::get('/user', [userController::class, 'index']);
 
 Route::get('/requests', [requestController::class, 'index']);
 Route::post('/requests', [requestController::class, 'store']);
+Route::get('/requests/{id}', [requestController::class, 'show']);
 
 Route::get('/assignments', [assignmentsController::class, 'index']);
 Route::post('/requests/{id}/assign', [assignmentsController::class, 'assign']);

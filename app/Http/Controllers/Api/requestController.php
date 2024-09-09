@@ -46,5 +46,14 @@ class requestController extends Controller
         ], 201);
     }
 
+    public function show($id) {
+        $requests = Requests::find($id);
+
+        if(!$requests){
+            return response()->json(['message' => 'Request not found'], 404);
+        }
+        return response()->json($requests, 200);
+    }
+
 
 }
