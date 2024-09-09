@@ -5,6 +5,10 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+use App\Models\Requests;
+use App\Models\Assignments;
+use Illuminate\Support\Facades\Validator;
+
 class assignmentsController extends Controller
 {
     public function index() {
