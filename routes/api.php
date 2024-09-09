@@ -14,4 +14,4 @@ Route::get('/requests', [requestController::class, 'index']);
 Route::post('/requests', [requestController::class, 'store']);
 
 Route::get('/assignments', [assignmentsController::class, 'index']);
-Route::post('/requests/{id}/assign', [AssignmentsController::class, 'assign']);
+Route::post('/requests/{id}/assign', [assignmentsController::class, 'assign']);
